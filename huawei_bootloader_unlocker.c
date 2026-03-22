@@ -10,7 +10,7 @@
 
 unsigned long long base_start = 1000000000000000;
 
-void resumer(){
+void resumer(int sig){
     printf("\n\nLast used code was: %lld", base_start);
 	FILE * fp = fopen("lastcode","w");
 	fprintf(fp,"%llu",base_start);
